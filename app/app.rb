@@ -11,7 +11,7 @@ class App < Sinatra::Base
     def initialize
         @eiis = EIIS.new
         # login, password
-        auth = @eiis.authorize("fisege", "123")
+        auth = @eiis.authorize("", "")
         if auth != nil
             puts("Session ID set to #{@eiis.session_id}")
         else
